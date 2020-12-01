@@ -1,0 +1,7 @@
+{
+  "name": "reddit-clone",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
