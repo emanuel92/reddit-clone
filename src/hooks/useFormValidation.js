@@ -38,3 +38,5 @@ function useFormValidation(initialState, validate, action) {
         handleSubmit, handleChange, values, setValues, isSubmitting
     };
 }
+
+export default useFormValidation
