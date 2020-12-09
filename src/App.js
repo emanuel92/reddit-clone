@@ -7,6 +7,7 @@ import {
   IonTabBar,
   IonTabButton,
   IonTabs,
+  IonLabel,
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import {
@@ -74,23 +75,23 @@ const App = () => {
             <IonTabBar slot="bottom">
               <IonTabButton tab="home" href="/home">
                 <IonIcon icon={homeOutline} />
-                <ionLabel>Hunt</ionLabel>
+                <IonLabel>Hunt</IonLabel>
               </IonTabButton>
               <IonTabButton tab="trending" href="/trending">
                 <IonIcon icon={trendingUpOutline} />
-                <ionLabel>Trending</ionLabel>
+                <IonLabel>Trending</IonLabel>
               </IonTabButton>
               <IonTabButton tab="submit" href="/submit">
                 <IonIcon icon={createOutline} />
-                <ionLabel>Submit</ionLabel>
+                <IonLabel>Submit</IonLabel>
               </IonTabButton>
               <IonTabButton tab="search" href="/search">
                 <IonIcon icon={searchOutline} />
-                <ionLabel>Search</ionLabel>
+                <IonLabel>Search</IonLabel>
               </IonTabButton>
               <IonTabButton tab="profile" href="/profile">
                 <IonIcon icon={personCircleOutline} />
-                <ionLabel>Profile</ionLabel>
+                <IonLabel>Profile</IonLabel>
               </IonTabButton>
             </IonTabBar>
           </IonTabs>

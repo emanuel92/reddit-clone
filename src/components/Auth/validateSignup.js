@@ -15,7 +15,7 @@ export default function validateSignup(values) {
     
     // Password Errors
     if (!values.password) {
-        errors.name = "A password is required.";
+        errors.password = "A password is required.";
     } else if (values.password.length < 6) {
         errors.password = "Your password must be at least 6 characters long.";
     }

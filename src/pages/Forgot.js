@@ -8,6 +8,7 @@ import {
     IonRow,
     IonCol,
     IonButton,
+    IonLoading,
 } from "@ionic/react";
 import NavHeader from "../components/Header/NavHeader";
 import { toast } from '../utils/toast';
@@ -25,7 +26,8 @@ const Forgot = (props) => {
         handleChange,
         values,
         isSubmitting
-    } = useFormValidation(INITIAL_STATE, validatePasswordReset, handleResetPassword)
+    } = useFormValidation(INITIAL_STATE, validatePasswordReset, handleResetPassword);
+
     const [busy, setBusy] = React.useState(false);
 
     async function handleResetPassword() {
@@ -45,6 +47,7 @@ const Forgot = (props) => {
     return (
         <IonPage>
             <NavHeader title="Reset Password" />
+            <IonLoading message={"Please wait..."} isOpen={busy} />
             <IonContent>
                 <IonItem lines="full">
                     <IonLabel position="floating">Email</IonLabel>
